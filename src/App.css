@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&family=Rubik&display=swap");
+html {
+  scroll-behavior: smooth;
+}
 
 .App {
-  text-align: center;
+  text-align: left;
 }
 
 .App-logo {
