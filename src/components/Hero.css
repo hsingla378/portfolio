@@ -1,0 +1,133 @@
+#hero {
+  display: flex;
+  justify-content: space-between;
+  max-width: 85%;
+  margin: 100px auto;
+}
+
+#hero-left {
+  max-width: 40%;
+  margin: 0 auto;
+}
+
+#hero-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1200px) {
+  #hero {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+  }
+
+  #hero-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+  }
+
+  #hero-img {
+    border-radius: 50%;
+    margin: auto;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  #hero {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    max-width: 85%;
+    margin: 50px auto;
+  }
+
+  #hero-left {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  #hero-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #hero-img {
+    border-radius: 50%;
+    margin: auto;
+    width: 50%;
+  }
+}
+
+#hero-before-heading {
+  font-size: 20px;
+  font-weight: 600;
+  color: #606060;
+  /* margin-bottom: 10px; */
+  line-height: 28px;
+}
+
+#hero-text {
+  color: #8896aa;
+  line-height: 24px;
+}
+
+#hero-data {
+  background-color: #4883e9;
+  color: white;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  margin: 30px auto;
+}
+
+.hero-data-single {
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+
+.hero-data-single:nth-child(2) {
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+}
+
+.hero-data-heading {
+  display: inline;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.hero-data-text {
+  font-size: 12px;
+  margin: 0;
+}
+
+#hero-img {
+  border-radius: 50%;
+  margin: auto;
+  max-width: 60%;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-data-heading {
+    display: inline;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .hero-data-text {
+    font-size: 8px;
+    margin: 0;
+  }
+}
