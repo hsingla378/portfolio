@@ -35,11 +35,11 @@ let skills = [
     image: "react.png",
   },
   {
-    name: "Node JS",
+    name: "Node",
     image: "node.png",
   },
   {
-    name: "Express JS",
+    name: "Express",
     image: "expressjs.png",
   },
   {
