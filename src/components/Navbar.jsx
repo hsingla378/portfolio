@@ -19,7 +19,7 @@ export default function Navbar() {
               <a href="#project-section">Projects</a>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <a href="#links">Links</a>
             </li>
             <li>
               <a

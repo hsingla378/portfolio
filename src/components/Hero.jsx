@@ -30,6 +30,15 @@ export default function Hero() {
             <p className="hero-data-text">DSA PROBLEMS SOLVED</p>
           </div>
         </div>
+        <div className="check-resume">
+          <a
+            href="https://bit.ly/hsingla-resume"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <button className="check-resume-btn">Check Resume</button>
+          </a>
+        </div>
       </div>
       {/* Hero Right  */}
       <div id="hero-right">

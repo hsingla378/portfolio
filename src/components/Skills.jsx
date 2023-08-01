@@ -3,52 +3,52 @@ import "./Skills.css";
 
 let skills = [
   {
-    name: "REST",
-    image: "rest.png",
+    name: "HTTP",
+    image: "http.png",
   },
   {
-    name: "Docker",
-    image: "docker.png",
+    name: "HTML",
+    image: "html.png",
+  },
+  {
+    name: "CSS",
+    image: "css.png",
+  },
+  {
+    name: "Bootstrap",
+    image: "bootstrap.png",
   },
   {
     name: "Git",
     image: "git.png",
   },
   {
-    name: "HTTP",
-    image: "http.png",
-  },
-  {
-    name: "Linux",
-    image: "linux.png",
-  },
-  {
-    name: "MongoDB",
-    image: "mongodb.png",
-  },
-  {
     name: "REST",
     image: "rest.png",
   },
   {
-    name: "Docker",
-    image: "docker.png",
+    name: "Javascript",
+    image: "javascript.png",
   },
   {
-    name: "Git",
-    image: "git.png",
+    name: "React",
+    image: "react.png",
   },
   {
-    name: "HTTP",
-    image: "http.png",
+    name: "Node JS",
+    image: "node.png",
   },
   {
-    name: "Linux",
-    image: "linux.png",
+    name: "Express JS",
+    image: "expressjs.png",
   },
   {
-    name: "MongoDB",
+    name: "Mongo DB",
     image: "mongodb.png",
+  },
+  {
+    name: "Mongoose",
+    image: "mongoose.png",
   },
 ];
 

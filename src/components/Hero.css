@@ -2,12 +2,14 @@
   display: flex;
   justify-content: space-between;
   max-width: 85%;
-  margin: 100px auto;
+  padding: 100px 0;
+  margin: 0 auto;
 }
 
 #hero-left {
   max-width: 40%;
   margin: 0 auto;
+  padding: 1.5rem;
 }
 
 #hero-right {
@@ -21,6 +23,8 @@
     display: flex;
     justify-content: center;
     max-width: 100%;
+    padding-top: 50px;
+    padding-bottom: 70px;
   }
 
   #hero-right {
@@ -43,7 +47,6 @@
     justify-content: center;
     flex-direction: column-reverse;
     max-width: 85%;
-    margin: 50px auto;
   }
 
   #hero-left {
@@ -111,6 +114,20 @@
 .hero-data-text {
   font-size: 12px;
   margin: 0;
+}
+
+.check-resume-btn {
+  color: #0d43a0;
+  border: 3px solid #0d43a0;
+  background-color: white;
+  margin: 20px auto;
+  font-size: 14px;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  border-radius: 30px;
+  padding: 15px 40px;
+  cursor: pointer;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
 #hero-img {

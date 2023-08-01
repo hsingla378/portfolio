@@ -4,7 +4,7 @@
 }
 
 .project {
-  display: flex;
+  display: grid;
   justify-content: center;
   justify-items: center;
   align-items: center;
@@ -58,7 +58,8 @@ li {
 }
 
 .demo-link-btn,
-.project-link-btn {
+.project-link-btn,
+.more-projects-btn {
   margin: 20px auto;
   font-size: 14px;
   font-family: "Nunito", sans-serif;
@@ -79,11 +80,21 @@ li {
   background-color: transparent;
 }
 
-.project-link-btn {
+.project-link-btn,
+.more-projects-btn {
   color: #0d43a0;
   border: 3px solid #0d43a0;
   background-color: white;
 }
+
+.more-projects {
+  display: flex;
+  justify-content: center;
+}
+
+/* .more-projects-btn {
+  font-size: 1rem;
+} */
 
 @media screen and (max-width: 768px) {
   /* Projects Section */
