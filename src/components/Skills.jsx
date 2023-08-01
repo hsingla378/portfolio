@@ -56,7 +56,7 @@ export default function Skills() {
   return (
     <section id="skill-section">
       <div id="skill-section-inner">
-        <div class="section-heading">
+        <div className="section-heading">
           <h2>Skills Acquired</h2>
         </div>
         <div id="skills">
@@ -64,7 +64,7 @@ export default function Skills() {
           {skills.map((skill) => {
             let { name, image } = skill;
             return (
-              <div class="skill">
+              <div className="skill">
                 <img src={image} alt={name} />
                 <p>{name}</p>
               </div>

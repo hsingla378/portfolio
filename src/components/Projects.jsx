@@ -1,5 +1,6 @@
 import React from "react";
 import "./Projects.css";
+import { Link } from "react-router-dom";
 
 export default function Projects() {
   let projects = [
@@ -33,12 +34,12 @@ export default function Projects() {
         {projects.map((project) => {
           const { name, date, desc, features, skills, link } = project;
           return (
-            <div class="project">
+            <div className="project">
               {/* <!-- Project Details --> */}
-              <div class="project-text">
+              <div className="project-text">
                 {/* <!-- Description --> */}
                 <h3>{name}</h3>
-                <p class="project-date">{date}</p>
+                <p className="project-date">{date}</p>
                 <div>
                   <p>{desc}</p>
                   <ul>
@@ -48,23 +49,28 @@ export default function Projects() {
                   </ul>
                 </div>
                 {/* <!-- Technologies used --> */}
-                <div class="project-skills">
+                <div className="project-skills">
                   {skills.map((skill) => {
-                    return <div class="project-skill">{skill}</div>;
+                    return <div className="project-skill">{skill}</div>;
                   })}
                 </div>
-                {/* <!-- Button for more details --> */}
-                <div>
-                  <a href={link} target="_blank">
-                    <button class="project-link-btn">
-                      View Project Details
-                    </button>
-                  </a>
+                {/* <!-- Buttons for more details --> */}
+                <div className="project-buttons">
+                    <a href={link} target="_blank" rel="noreferrer">
+                      <button className="demo-link-btn">
+                        View Demo
+                      </button>
+                    </a>
+                    <a href={link} target="_blank" rel="noreferrer">
+                      <button className="project-link-btn">
+                        View Project Details
+                      </button>
+                    </a>
                 </div>
               </div>
               {/* <!-- Project Image --> */}
               <div>
-                <img src="project-img.png" alt="QEats" class="project-img" />
+                <img src="project-img.png" alt="QEats" className="project-img" />
               </div>
             </div>
           );

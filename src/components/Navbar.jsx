@@ -13,13 +13,22 @@ export default function Navbar() {
         <div>
           <ul>
             <li>
-              <a href="#hero">About</a>
-            </li>
-            <li>
-              <a href="#skill-section">Work</a>
+              <a href="#skill-section">Skills</a>
             </li>
             <li>
               <a href="#project-section">Projects</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+            <li>
+              <a
+                href="https://himanshusingla.hashnode.dev"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Blog
+              </a>
             </li>
           </ul>
         </div>

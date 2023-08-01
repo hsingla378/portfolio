@@ -14,6 +14,7 @@
   background-color: #f1f1fa;
   border-radius: 20px;
   padding: 25px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
 .project-img {
@@ -48,19 +49,40 @@ li {
   margin: 5px;
   /* border: 1px solid black; */
   border-radius: 5px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
 }
 
+.project-buttons {
+  display: flex;
+  gap: 1.5em;
+}
+
+.demo-link-btn,
 .project-link-btn {
   margin: 20px auto;
   font-size: 14px;
   font-family: "Nunito", sans-serif;
   font-weight: bold;
-  color: #0d43a0;
-  border: 2px solid #0d43a0;
-  background-color: white;
   border-radius: 30px;
-  padding: 20px 40px;
+  padding: 15px 40px;
   cursor: pointer;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.demo-link-btn {
+  color: #0d43a0;
+  border: 3px solid #ffba49;
+  background-color: #ffba49;
+}
+
+.demo-link-btn:hover {
+  background-color: transparent;
+}
+
+.project-link-btn {
+  color: #0d43a0;
+  border: 3px solid #0d43a0;
+  background-color: white;
 }
 
 @media screen and (max-width: 768px) {
@@ -120,16 +142,13 @@ li {
     border-radius: 5px;
   }
 
+  .project-buttons {
+    margin-top: 1em;
+    justify-content: center;
+  }
+
+  .demo-link-btn,
   .project-link-btn {
-    margin: 20px auto;
-    font-size: 14px;
-    font-family: "Nunito", sans-serif;
-    font-weight: bold;
-    color: #0d43a0;
-    border: 2px solid #0d43a0;
-    background-color: white;
-    border-radius: 30px;
-    padding: 20px 40px;
-    cursor: pointer;
+    padding: 10px 20px;
   }
 }

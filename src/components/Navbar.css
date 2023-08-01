@@ -35,6 +35,7 @@ nav div a:hover {
 }
 
 nav div ul {
+  padding: 0;
   display: flex;
   justify-content: right;
 }

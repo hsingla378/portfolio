@@ -17,17 +17,17 @@ export default function Hero() {
         </div>
 
         <div id="hero-data">
-          <div class="hero-data-single">
-            <span class="hero-data-heading">10+</span>
-            <p class="hero-data-text">VERIFIED SKILLS</p>
+          <div className="hero-data-single">
+            <span className="hero-data-heading">10+</span>
+            <p className="hero-data-text">VERIFIED SKILLS</p>
           </div>
-          <div class="hero-data-single">
-            <span class="hero-data-heading">5+</span>
-            <p class="hero-data-text">PROFESSIONAL PROJECTS</p>
+          <div className="hero-data-single">
+            <span className="hero-data-heading">5+</span>
+            <p className="hero-data-text">PROFESSIONAL PROJECTS</p>
           </div>
-          <div class="hero-data-single">
-            <span class="hero-data-heading">150+</span>
-            <p class="hero-data-text">DSA PROBLEMS SOLVED</p>
+          <div className="hero-data-single">
+            <span className="hero-data-heading">150+</span>
+            <p className="hero-data-text">DSA PROBLEMS SOLVED</p>
           </div>
         </div>
       </div>
