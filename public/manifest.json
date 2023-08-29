@@ -1,15 +1,25 @@
 {
-  "name": "Himanshu Singla - Full Stack Developer",
   "short_name": "Himanshu",
-  "start_url": "/",
-  "display": "standalone",
-  "theme_color": "##0d43a0",
-  "background_color": "##0d43a0",
+  "name": "Himanshu Singla Portfolio",
   "icons": [
     {
       "src": "himanshu.jpg",
-      "sizes": "192x192",
-      "type": "image/jpg"
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "himanshu.jpg",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "himanshu.jpg",
+      "type": "image/png",
+      "sizes": "512x512"
     }
-  ]
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#0d43a0",
+  "background_color": "#ffffff"
 }
