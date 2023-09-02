@@ -106,3 +106,10 @@ h3 {
   color: #0d43a0;
   font-weight: 800;
 }
+
+@media (display-mode: standalone) {
+  body {
+    padding: env(safe-area-inset-top) env(safe-area-inset-right)
+      env(safe-area-inset-bottom) env(safe-area-inset-left) !important;
+  }
+}
