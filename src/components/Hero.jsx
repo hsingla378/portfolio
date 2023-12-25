@@ -32,7 +32,7 @@ export default function Hero() {
         </div>
         <div className="check-resume">
           <a
-            href="https://bit.ly/478VV3v"
+            href="https://drive.google.com/file/d/1M48UHm4bRnuHcRBO1qmEFsbzKDsp67aV/view?usp=sharing"
             target="_blank"
             rel="noreferrer"
           >
