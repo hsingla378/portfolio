@@ -3,6 +3,36 @@
   margin: 50px auto;
 }
 
+.categories-container {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.category-btn {
+  /* margin: 20px 10px; */
+  font-size: 14px;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  border-radius: 30px;
+  padding: 15px 40px;
+  cursor: pointer;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.category-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.category-btn-selected {
+  background-color: black;
+  color: white;
+}
+
 .project {
   display: grid;
   justify-content: center;
@@ -105,6 +135,10 @@ li {
     margin: 50px auto;
   }
 
+  .categories-container {
+    gap: 1rem;
+  }
+
   .project {
     display: flex;
     justify-content: center;
@@ -160,7 +194,8 @@ li {
   }
 
   .demo-link-btn,
-  .project-link-btn {
+  .project-link-btn,
+  .category-btn {
     padding: 10px 20px;
   }
 }

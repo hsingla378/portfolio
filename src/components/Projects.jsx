@@ -1,108 +1,46 @@
 /* eslint-disable no-unused-vars */
-import React from "react";
+import React, { useState } from "react";
 import "./Projects.css";
+import { projects, projectCategories } from "../utils/constants";
 
 export default function Projects() {
-  let projects = [
-    {
-      name: "QKart Frontend",
-      date: "Feb 2023",
-      category: "",
-      thumbnail: "qkartfrontend.png",
-      images: "",
-      desc: "QKart is an e-commerce application offering a variety of products for customers to choose from. During the course of this project,",
-      features: [
-        "Implemented the core logic for authentication, shopping cart and checkout",
-        "Improved UI by adding responsive design elements for uniform experience across different devices",
-        "Utilized REST APIs to dynamically load and render data served by the backend server",
-      ],
-      skills: ["React", "Material UI", "Javascript", "CSS", "HTML"],
-      demo: "https://himanshu-qkart.netlify.app/",
-      github: "https://github.com/hsingla378/qkart",
-      youtube: "",
-    },
-    {
-      name: "XBoard",
-      date: "Jan 2023",
-      category: "",
-      thumbnail: "xboard.png",
-      images: "",
-      desc: "XBoard is a News Feed website that will feature the latest news for select topics, from Flipboard. During the course of this project,",
-      features: [
-        "Built XBoard using HTML, CSS, Bootstrap and JavaScript from scratch",
-        "Used Accordions and Image Carousel to improve UI",
-        "Fetched news content from flipboard's RSS feed using REST API",
-      ],
-      skills: [
-        "HTML",
-        "CSS",
-        "Figma",
-        "Bootstrap",
-        "JavaScript",
-        "REST",
-        "Netlify",
-      ],
-      demo: "https://xboard-himanshu.netlify.app/",
-      github: "https://github.com/hsingla378/xboard",
-      youtube: "",
-    },
-    {
-      name: "QTripDynamic",
-      date: "Dec 2022",
-      category: "",
-      thumbnail: "qtripdynamic.png",
-      images: "",
-      desc: "QTrip is a travel website aimed at travellers looking for a multitude of adventures in different cities. During the course of this project, ",
-      features: [
-        "Created web pages using HTML and CSS and made them dynamic using JavaScript",
-        "Improved UX with multi-select filters, image carousels",
-        "Utilised localStorage to persist user preferences at client-side",
-      ],
-      skills: [
-        "Render",
-        "Netlify",
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "Bootstrap",
-        "HTTP",
-        "REST",
-      ],
-      demo: "https://himanshu-qtrip-dynamic.netlify.app/",
-      github: "https://github.com/hsingla378/qtripdynamic",
-      youtube: "",
-    },
-    {
-      name: "QTripStatic",
-      date: "Dec 2022",
-      category: "",
-      thumbnail: "qtripstatic.png",
-      images: "",
-      desc: "QTrip is a travel website aimed at travellers looking for a multitude of adventures in different cities. During the course of this project,",
-      features: [
-        "Created 3 different web pages from Wireframe layout using HTML and CSS",
-        "Utilized Bootstrap extensively for responsive design",
-        "Deployed the website to Netlify",
-      ],
-      skills: [
-        "HTML",
-        "CSS",
-        "Bootstrap",
-        "Responsive Design",
-        "Deployment",
-        "Netlify",
-      ],
-      demo: "https://himanshu-qtrip-static.netlify.app/",
-      github: "https://github.com/hsingla378/qtripstatic",
-      youtube: "",
-    },
-  ];
+  const [currentCategory, setCurrentCategory] = useState("all");
+  const [filteredProjects, setFilteredProjects] = useState(projects);
+
+  const filterByCategory = (category) => {
+    setCurrentCategory(category.toLowerCase());
+    if (category.toLowerCase() === "all") {
+      setFilteredProjects(projects);
+      return;
+    }
+
+    let filteredData = projects.filter((project) => {
+      return project.category === category.toLowerCase();
+    });
+    setFilteredProjects(filteredData);
+  };
 
   return (
     <section id="project-section">
       <h2>My Projects</h2>
+      <div className="categories-container">
+        {projectCategories.map((category) => (
+          <button
+            value={category}
+            className={
+              currentCategory === category.toLowerCase()
+                ? "category-btn category-btn-selected"
+                : "category-btn"
+            }
+            onClick={(e) => filterByCategory(e.target.value)}
+          >
+            {category}
+          </button>
+        ))}
+      </div>
       <div id="project-section-inner">
-        {projects.map((project) => {
+        {console.log("filteredProjects", filteredProjects)}
+        {filteredProjects.map((project) => {
           const {
             name,
             date,
