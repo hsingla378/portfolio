@@ -53,7 +53,7 @@ body {
 h1 {
   font-size: 48px;
   font-weight: 900;
-  color: #0d43a0;
+  color: #242424;
   margin: 0 auto;
   line-height: 48px;
 }
@@ -62,7 +62,7 @@ h2 {
   font-size: 36px;
   font-weight: 700;
   text-align: center;
-  color: #0d43a0;
+  color: #242424;
   margin: 0 auto;
   line-height: 48px;
 }
@@ -70,7 +70,7 @@ h2 {
 @media screen and (min-width: 768px) {
   h2 {
     margin: 100px auto;
-    color: #0d43a0;
+    color: #242424;
     text-align: center;
     font-size: 36px;
     max-width: 600px;
@@ -83,7 +83,7 @@ h2 {
     display: block;
     width: 130px;
     height: 5px;
-    background: #0d43a0;
+    background: #242424;
     left: 0;
     top: 50%;
     position: absolute;
@@ -94,7 +94,7 @@ h2 {
     display: block;
     width: 130px;
     height: 5px;
-    background: #0d43a0;
+    background: #242424;
     right: 0;
     top: 50%;
     position: absolute;
@@ -103,7 +103,7 @@ h2 {
 
 h3 {
   font-size: 36px;
-  color: #0d43a0;
+  color: #242424;
   font-weight: 800;
 }
 

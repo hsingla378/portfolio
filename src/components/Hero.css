@@ -82,7 +82,7 @@
 }
 
 #hero-data {
-  background-color: #4883e9;
+  background-color: #242424;
   color: white;
   display: flex;
   justify-content: center;
@@ -117,8 +117,8 @@
 }
 
 .check-resume-btn {
-  color: #0d43a0;
-  border: 3px solid #0d43a0;
+  color: #242424;
+  border: 3px solid #242424;
   background-color: white;
   margin: 20px auto;
   font-size: 14px;
@@ -135,6 +135,7 @@
   margin: auto;
   max-width: 60%;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  /* filter: grayscale(100%); */
 }
 
 @media screen and (max-width: 768px) {

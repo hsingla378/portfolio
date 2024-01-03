@@ -22,7 +22,7 @@
 }
 
 .skill p {
-  color: #0d43a0;
+  color: #242424;
   font-size: 1rem;
   display: flex;
   justify-content: center;
@@ -30,12 +30,13 @@
 
 .skill img {
   max-width: 50%;
-  background: rgb(88, 93, 254);
+  background: #242424;
   background: linear-gradient(
     294deg,
-    rgba(88, 93, 254, 1) 0%,
-    rgba(72, 131, 233, 0.7990546560421043) 100%
+    rgba(36, 36, 36, 1) 0%,
+    rgba(36, 36, 36, 0.7990546560421043) 100%
   );
+
   padding: 10px;
   border-radius: 20px;
   margin: auto;
@@ -58,18 +59,12 @@
   .skill p {
     display: flex;
     justify-content: center;
-    color: #0d43a0;
+    color: #242424;
     font-size: 0.75rem;
   }
 
   .skill img {
     max-width: 75%;
-    background: rgb(88, 93, 254);
-    background: linear-gradient(
-      294deg,
-      rgba(88, 93, 254, 1) 0%,
-      rgba(72, 131, 233, 0.7990546560421043) 100%
-    );
     padding: 10px;
     border-radius: 10px;
     margin: auto;
