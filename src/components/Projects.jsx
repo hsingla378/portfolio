@@ -56,40 +56,24 @@ export default function Projects() {
           } = project;
           return (
             <div className="project">
-              {/* <!-- Project Details --> */}
-              <div className="project-text">
-                {/* <!-- Description --> */}
-                <h3>{name}</h3>
-                <p className="project-date">{date}</p>
-                <div>
-                  <p>{desc}</p>
-                  <ul>
-                    {features.map((feature) => {
-                      return <li>{feature}</li>;
-                    })}
-                  </ul>
-                </div>
-                {/* <!-- Technologies used --> */}
-                <div className="project-skills">
-                  {skills.map((skill) => {
-                    return <div className="project-skill">{skill}</div>;
-                  })}
-                </div>
-                {/* <!-- Buttons for more details --> */}
-                <div className="project-buttons">
-                  <a href={demo} target="_blank" rel="noreferrer">
-                    <button className="demo-link-btn">View Demo</button>
-                  </a>
-                  <a href={github} target="_blank" rel="noreferrer">
-                    <button className="project-link-btn">
-                      View Project Details
-                    </button>
-                  </a>
-                </div>
+              <h3>{name}</h3>
+              <img src={thumbnail} alt="QEats" className="project-img" />
+              <p>{desc}</p>
+              <div className="project-skills">
+                {skills.map((skill) => {
+                  return <div className="project-skill">{skill}</div>;
+                })}
               </div>
-              {/* <!-- Project Image --> */}
-              <div>
-                <img src={thumbnail} alt="QEats" className="project-img" />
+              {/* <!-- Buttons for more details --> */}
+              <div className="project-buttons">
+                <a href={demo} target="_blank" rel="noreferrer">
+                  <button className="demo-link-btn">Demo</button>
+                </a>
+                <a href={github} target="_blank" rel="noreferrer">
+                  <button className="project-link-btn">
+                    More Details
+                  </button>
+                </a>
               </div>
             </div>
           );

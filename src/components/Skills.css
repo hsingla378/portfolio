@@ -11,6 +11,7 @@
 #skills {
   margin: 50px auto;
   display: grid;
+  justify-content: center;
   gap: 30px;
   grid-template-columns: 15% 15% 15% 15% 15% 15%;
 }

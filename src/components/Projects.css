@@ -18,7 +18,7 @@
   font-family: "Nunito", sans-serif;
   font-weight: bold;
   border-radius: 30px;
-  padding: 15px 40px;
+  padding: 15px 30px;
   cursor: pointer;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
@@ -33,23 +33,28 @@
   color: white;
 }
 
-.project {
+#project-section-inner {
+  margin: 50px auto;
   display: grid;
   justify-content: center;
-  justify-items: center;
-  align-items: center;
-  max-width: 75%;
-  margin: 50px auto;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 33% 33% 33%;
+  gap: 2rem;
+}
+
+.project {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 0.5rem;
   background-color: #f1f1fa;
   border-radius: 20px;
-  padding: 25px;
+  padding: 20px;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
 .project-img {
-  width: 70%;
-  display: flex;
+  width: 50%;
   margin: auto;
 }
 
@@ -84,6 +89,7 @@ li {
 
 .project-buttons {
   display: flex;
+  justify-content: center;
   gap: 1.5em;
 }
 
@@ -95,7 +101,7 @@ li {
   font-family: "Nunito", sans-serif;
   font-weight: bold;
   border-radius: 30px;
-  padding: 15px 40px;
+  padding: 15px 30px;
   cursor: pointer;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
@@ -127,70 +133,39 @@ li {
   font-size: 1rem;
 } */
 
+@media screen and (max-width: 1100px) {
+  #project-section-inner {
+    grid-template-columns: 50% 50%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   /* Projects Section */
 
   #project-section {
     max-width: 100%;
-    margin: 50px auto;
   }
 
   .categories-container {
     gap: 1rem;
   }
 
-  .project {
-    display: flex;
-    justify-content: center;
-    flex-direction: column-reverse;
-    text-align: center;
-    max-width: 75%;
-    margin: 50px auto;
-    grid-template-columns: 60% 40%;
-    background-color: #f1f1fa;
-    border-radius: 20px;
-    padding: 25px;
+  #project-section-inner {
+    grid-template-columns: 100%;
   }
 
-  .project-img {
-    width: 70%;
+  .project {
+    max-width: 80%;
+    justify-self: center;
   }
 
   .project h3 {
     margin: auto;
-    line-height: 40px;
-    text-align: center;
-  }
-
-  .project-date {
-    color: #3c3c3c;
-    line-height: 24px;
-    display: flex;
-    justify-content: center;
   }
 
   .project p,
   li {
     text-align: left;
-    font-size: 14px;
-    line-height: 22.75px;
-  }
-
-  .project-skill {
-    font-family: "Nunito", sans-serif;
-    display: inline-block;
-    font-size: 12px;
-    color: black;
-    background-color: white;
-    padding: 8px 10px;
-    margin: 5px;
-    /* border: 1px solid black; */
-    border-radius: 5px;
-  }
-
-  .project-buttons {
-    margin-top: 1em;
-    justify-content: center;
   }
 
   .demo-link-btn,
