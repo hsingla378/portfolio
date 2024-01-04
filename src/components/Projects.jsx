@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import "./Projects.css";
 import { projects, projectCategories } from "../utils/constants";
+import SingleProject from "./SingleProject";
 
 export default function Projects() {
   const [currentCategory, setCurrentCategory] = useState("all");
@@ -41,42 +42,7 @@ export default function Projects() {
       <div id="project-section-inner">
         {console.log("filteredProjects", filteredProjects)}
         {filteredProjects.map((project) => {
-          const {
-            name,
-            date,
-            category,
-            thumbnail,
-            images,
-            desc,
-            features,
-            skills,
-            demo,
-            github,
-            youtube,
-          } = project;
-          return (
-            <div className="project">
-              <h3>{name}</h3>
-              <img src={thumbnail} alt="QEats" className="project-img" />
-              <p>{desc}</p>
-              <div className="project-skills">
-                {skills.map((skill) => {
-                  return <div className="project-skill">{skill}</div>;
-                })}
-              </div>
-              {/* <!-- Buttons for more details --> */}
-              <div className="project-buttons">
-                <a href={demo} target="_blank" rel="noreferrer">
-                  <button className="demo-link-btn">Demo</button>
-                </a>
-                <a href={github} target="_blank" rel="noreferrer">
-                  <button className="project-link-btn">
-                    More Details
-                  </button>
-                </a>
-              </div>
-            </div>
-          );
+          return <SingleProject project={project} />;
         })}
       </div>
       <div className="more-projects">

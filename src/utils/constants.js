@@ -3,7 +3,7 @@ export const projects = [
     name: "QKart Frontend",
     date: "Feb 2023",
     category: "frontend",
-    thumbnail: "qkartfrontend.png",
+    thumbnail: "qkart_project.png",
     images: "",
     desc: "QKart is an e-commerce application offering a variety of products for customers to choose from.",
     features: [

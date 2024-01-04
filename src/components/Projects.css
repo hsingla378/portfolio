@@ -41,60 +41,6 @@
   gap: 2rem;
 }
 
-.project {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  gap: 0.5rem;
-  background-color: #f1f1fa;
-  border-radius: 20px;
-  padding: 20px;
-  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-}
-
-.project-img {
-  width: 50%;
-  margin: auto;
-}
-
-.project h3 {
-  margin: 0;
-  line-height: 40px;
-}
-
-.project-date {
-  color: #3c3c3c;
-  line-height: 24px;
-}
-
-.project p,
-li {
-  font-size: 14px;
-  line-height: 22.75px;
-}
-
-.project-skill {
-  font-family: "Nunito", sans-serif;
-  display: inline-block;
-  font-size: 12px;
-  color: black;
-  background-color: white;
-  padding: 8px 10px;
-  margin: 5px;
-  /* border: 1px solid black; */
-  border-radius: 5px;
-  box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
-}
-
-.project-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 1.5em;
-}
-
-.demo-link-btn,
-.project-link-btn,
 .more-projects-btn {
   margin: 20px auto;
   font-size: 14px;
@@ -106,32 +52,10 @@ li {
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
-.demo-link-btn {
-  color: white;
-  border: 3px solid #242424;
-  background-color: #242424;
-}
-
-.demo-link-btn:hover {
-  color: #282c34;
-  background-color: transparent;
-}
-
-.project-link-btn,
-.more-projects-btn {
-  color: #242424;
-  border: 3px solid #242424;
-  background-color: white;
-}
-
 .more-projects {
   display: flex;
   justify-content: center;
 }
-
-/* .more-projects-btn {
-  font-size: 1rem;
-} */
 
 @media screen and (max-width: 1100px) {
   #project-section-inner {
@@ -154,22 +78,6 @@ li {
     grid-template-columns: 100%;
   }
 
-  .project {
-    max-width: 80%;
-    justify-self: center;
-  }
-
-  .project h3 {
-    margin: auto;
-  }
-
-  .project p,
-  li {
-    text-align: left;
-  }
-
-  .demo-link-btn,
-  .project-link-btn,
   .category-btn {
     padding: 10px 20px;
   }
