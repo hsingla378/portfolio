@@ -2,7 +2,7 @@ export const projects = [
   {
     name: "QKart Frontend",
     date: "Feb 2023",
-    category: "frontend",
+    category: "react",
     thumbnail: "qkart_project.png",
     images: "",
     desc: "QKart is an e-commerce application offering a variety of products for customers to choose from.",
@@ -123,7 +123,7 @@ export const skills = [
 export const projectCategories = [
   "All",
   "Full Stack",
-  "Frontend",
+  "React",
   "Backend",
   "HTML/CSS/JavaScript",
   "Other",

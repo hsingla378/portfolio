@@ -7,6 +7,7 @@
   border-radius: 50%;
   z-index: 1;
   pointer-events: none;
+  box-shadow: 0 3px 20px rgb(0 0 0 / 0.4);
 }
 
 .cursor-dot {
@@ -21,4 +22,11 @@
   height: 40px;
   border: 2px solid hsla(0, 0%, 100%, 0.5);
   background-color: #242424;
+}
+
+@media (max-width: 767px) {
+  .cursor-dot,
+  .cursor-outline {
+    display: none;
+  }
 }
