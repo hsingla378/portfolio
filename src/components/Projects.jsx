@@ -3,6 +3,13 @@ import React, { useState } from "react";
 import "./Projects.css";
 import { projects, projectCategories } from "../utils/constants";
 import SingleProject from "./SingleProject";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { FreeMode, Pagination, Autoplay, Navigation } from "swiper/modules";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/pagination";
 
 export default function Projects() {
   const [currentCategory, setCurrentCategory] = useState("all");
@@ -40,10 +47,44 @@ export default function Projects() {
         ))}
       </div>
       <div id="project-section-inner">
-        {console.log("filteredProjects", filteredProjects)}
-        {filteredProjects.map((project) => {
-          return <SingleProject project={project} />;
-        })}
+        <Swiper
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          navigation={true}
+          breakpoints={{
+            640: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 40,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 50,
+            },
+          }}
+          slidesPerView={1}
+          spaceBetween={30}
+          freeMode={true}
+          pagination={{
+            clickable: true,
+          }}
+          modules={[FreeMode, Pagination, Autoplay, Navigation]}
+          className="mySwiper"
+          grabCursor={true}
+        >
+          {filteredProjects.map((project, index) => {
+            return (
+              <SwiperSlide key={index}>
+                <SingleProject project={project} />
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
       </div>
       <div className="more-projects">
         <a
